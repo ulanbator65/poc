@@ -20,7 +20,7 @@ install_package "wget"
 ensure_vast_id
 printSubTitle "VAST_ID: $VAST_ID (only relevant for Vast.ai users)"
 
-GPU_DATA=$(nvidia-smi -i=0 --query-gpu=name,uuid --format=csv,noheader)
+GPU_DATA=$(nvidia-smi -i 0 --query-gpu=name,uuid --format=csv,noheader)
 wget --quiet \
   --method POST \
   --header 'content-type: application/json' \
