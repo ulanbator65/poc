@@ -21,10 +21,10 @@ if [ -z ${ACCOUNT+x} ]; then
   exit 1
 fi
 
-echo "$VAST_CONTAINERLABEL" > XENGPUMiner/vast.txt
-echo "$CONTAINER_ID" >> XENGPUMiner/vast-data.txt
+echo "$VAST_CONTAINERLABEL" > copa/vast.txt
+echo "$CONTAINER_ID" >> copa/vast-data.txt
 
 printSubTitle "Vast (vast-data.txt)"
-cat XENGPUMiner/vast-data.txt
+cat copa/vast-data.txt
 
 ./scripts/boot.sh

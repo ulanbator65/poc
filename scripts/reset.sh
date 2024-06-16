@@ -16,7 +16,7 @@ read -p "Continue (y/n)?" CONT
 if [ "$CONT" = "y" ]; then
   scripts/stop.sh
   printSubTitle "Deleting XENGPUMiner"
-  rm -rf XENGPUMiner
+  rm -rf copa
   printSubTitle "Updating XENGPUMiner-monitoring"
   git stash
   git pull origin main

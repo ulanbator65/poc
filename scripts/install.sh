@@ -36,10 +36,10 @@ install_package "ocl-icd-opencl-dev"
 install_package "screen"
 install_package "nano"
 
-if [ ! -d "XENGPUMiner" ]; then
+if [ ! -d "copa" ]; then
   printTitle "Cloning XENGPUMiner official xenblocks.app repo"
   git clone https://github.com/ulanbator65/copa.git || echo "Skip cloning copa.git"
-  cp watch.py XENGPUMiner/watch.py &>/dev/null || echo "Skip cp watch.py"
+  cp watch.py copa/watch.py &>/dev/null || echo "Skip cp watch.py"
 fi
 
 cd_xengpuminer

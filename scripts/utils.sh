@@ -28,7 +28,7 @@ cd_project_root() {
 }
 
 cd_xengpuminer() {
-  cd "$ROOT_DIR/XENGPUMiner" || exit 1
+  cd "$ROOT_DIR/copa" || exit 1
 }
 
 # Ensure account use following order
