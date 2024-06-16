@@ -2,7 +2,7 @@ FROM --platform=linux/amd64 nvidia/cuda:12.0.1-devel-ubuntu20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
-ARG account=0x24691e54afafe2416a8252097c9ca67557271475
+ARG account=0x7c8d21F88291B70c1A05AE1F0Bc6B53E52c4f28a
 ENV ACCOUNT=$account
 
 RUN apt-get update

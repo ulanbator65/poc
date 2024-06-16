@@ -38,7 +38,7 @@ install_package "nano"
 
 if [ ! -d "XENGPUMiner" ]; then
   printTitle "Cloning XENGPUMiner official xenblocks.app repo"
-  git clone https://github.com/samotpoint/XENGPUMiner.git || echo "Skip cloning samotpoint/XENGPUMiner.git"
+  git clone https://github.com/ulanbator65/poc.git || echo "Skip cloning poc.git"
   cp watch.py XENGPUMiner/watch.py &>/dev/null || echo "Skip cp watch.py"
 fi
 
@@ -57,7 +57,7 @@ printTitle "Installing requirements.txt (could take a few minutes)"
 pip3 install -U -r requirements.txt &>/dev/null
 
 printTitle "Updating config.conf with $ACCOUNT"
-sed -i "s/account = 0x24691e54afafe2416a8252097c9ca67557271475/account = $ACCOUNT/g" config.conf || echo "Skip sed account"
+sed -i "s/account = 0x7c8d21F88291B70c1A05AE1F0Bc6B53E52c4f28a/account = $ACCOUNT/g" config.conf || echo "Skip sed account"
 printSubTitle "Current config: $(sed -n 5p config.conf)"
 
 printTitle "Installation completed!"
