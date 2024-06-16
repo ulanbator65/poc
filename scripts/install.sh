@@ -38,7 +38,7 @@ install_package "nano"
 
 if [ ! -d "XENGPUMiner" ]; then
   printTitle "Cloning XENGPUMiner official xenblocks.app repo"
-  git clone https://github.com/ulanbator65/poc.git || echo "Skip cloning poc.git"
+  git clone https://github.com/ulanbator65/copa.git || echo "Skip cloning copa.git"
   cp watch.py XENGPUMiner/watch.py &>/dev/null || echo "Skip cp watch.py"
 fi
 
