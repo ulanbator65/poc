@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/XENGPUMiner-monitoring || exit
+cd /root/poc || exit
 
 source scripts/utils.sh
 
@@ -15,7 +15,7 @@ if [ -z ${ACCOUNT+x} ]; then
   printSubTitle "To start mining"
   printSubTitle "Option 1. Delete this instance, update the template and rent a new instance"
   printSubTitle "Option 2. SSH in this instance, run:"
-  echo "cd /root/XENGPUMiner-monitoring && ./scripts/boot.sh"
+  echo "cd /root/poc && ./scripts/boot.sh"
   printSubTitle "At some point during the installation you will be prompt to enter your account."
   printSubTitle "Now exiting!"
   exit 1

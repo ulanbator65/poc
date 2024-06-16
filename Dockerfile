@@ -14,7 +14,7 @@ WORKDIR /root
 COPY onstart.sh onstart.sh
 RUN chmod 700 onstart.sh
 
-WORKDIR /root/XENGPUMiner-monitoring
+WORKDIR /root/poc
 
 COPY . .
 

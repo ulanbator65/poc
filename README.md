@@ -1,4 +1,4 @@
-# XENGPUMiner-monitoring
+# POC (XENGPUMiner-monitoring)
 
 <div style="width: 100%; text-align: center">
   <img src="docs/xenblocks-app-banner.png" alt="Xenblocks App" style="height:350px"/>
