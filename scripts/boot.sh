@@ -5,6 +5,6 @@ cd_project_root
 
 scripts/install.sh
 scripts/start.sh
-scripts/monitor.sh
+#scripts/monitor.sh
 
 cd_project_root
